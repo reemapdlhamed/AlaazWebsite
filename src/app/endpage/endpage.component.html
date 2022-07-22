@@ -1,0 +1,110 @@
+<html>
+  <footer id="fotter">
+    <div class="foter">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="mx-5 mt-5">
+            <h3 class="footer-logo">
+              <img src="assets/images/footer-logo.png" alt="" />
+            </h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Recusandae sed minima nesciunt quas dicta! Esse? minima nesciunt
+              quas
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio,
+              necessitatibus incidunt facere similique sequi ratione dolorum
+              veritatis quod soluta qui nostrum itaque eligendi quo nisi.
+            </p>
+            <div class="download">
+              <div class="row mt-5">
+                <div class="col-sm-4">
+                  <a href="https://www.{{ abouts?.GooglePlay }}"
+                    ><img src="assets/images/googleplay.png" alt=""
+                  /></a>
+                </div>
+                <div class="col-sm-4">
+                  <a href="https://www.{{ abouts?.AppStore }}"
+                    ><img src="assets/images/Appstrore.png" alt=""
+                  /></a>
+                </div>
+                <div class="col-sm-4">
+                  <a href="https://www.{{ abouts?.AppGellary }}"
+                    ><img src="assets/images/Appgallary.png" alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <h6 style="font-size: small" class="my-3">
+              © 2022 . All rights reserved Alazz
+            </h6>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="mt-5 mx-5 flinks list">
+            <a href=""><h5>Home</h5></a>
+            <a href=""><h5>About Alaaz</h5></a>
+            <!-- <a href=""><h5>Our App</h5></a>
+            <a href=""><h5>Contact US</h5></a> -->
+            <a href=""><h5>Become To A Partner</h5></a>
+            <a href=""><h5>Need A Delivery</h5></a>
+            <a href=""><h5>Career</h5></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="mt-5 mx-5">
+            <h6 class="contact-us">
+              <i class="fa-solid fa-paper-plane"></i> Contact us if you have any
+              questions :
+            </h6>
+            <h6 class="email" style="font-size: medium">
+              <a href="mailto: {{ abouts?.Email }} "
+                >Mail: {{ abouts?.Email }}
+              </a>
+            </h6>
+
+            <!-- <h6> <mat-icon style="color: #fff;">send</mat-icon> Saudi Arabia Office:</h6>
+            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
+
+            <div class="location" [ngClass]="{ limitTextHeight: isReadMore }">
+              <!-- <h6> <mat-icon style="color: #fff;">send</mat-icon> Saudi Arabia Office:</h6>
+              <p class="mb-4">  This is long text replaced with reading more/less link example in Angular application paragraph text shown here continue THis is long text replaced with read more/less link example in Angular application paragraph text shown here continue continue
+                This is long text replaced with reading more/less link example in Angular application paragraph text shown here continue THis is long text replaced with read more/less link example in Angular application paragraph text shown here continue
+                continue THis is long text replaced with reading more/less link example in Angular application paragraph text shown here continue THis is long text replaced with read more/less link example in Angular application paragraph text shown here
+                continue continue</p> -->
+              <h6 class="location-icon">
+                <i class="fa-solid fa-location-dot"></i> Saudi Arabia Office :
+              </h6>
+              <p>{{ abouts?.EnOfficeDetails }}</p>
+              <!-- {{ readMoreDate }} -->
+              <h6 class="location-icon">
+                <i class="fa-solid fa-location-dot"></i> Egypt Office :
+              </h6>
+              <p>
+                cairo Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Fugi
+              </p>
+            </div>
+
+            <button
+              class="read-more"
+              type="button"
+              (click)="showText()"
+              *ngIf="abouts?.EnOfficeDetails.length >= 200"
+            >
+              {{ isReadMore ? "Read More" : "Read Less" }}
+            </button>
+            <div class="icons">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>

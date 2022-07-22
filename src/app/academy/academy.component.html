@@ -1,0 +1,89 @@
+<app-navbar></app-navbar>
+
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="top">
+      <div class="container">
+        <div class="row mt-5">
+          <div class="restaurant"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="course">
+      <div class="container">
+        <div class="row text-center">
+          <h2 class="my-5">Academy / Courses</h2>
+
+          <h5 style="font-weight: 400">
+            Lorem ipsum dolor sit amet quidem esse, mollitia deleniti dicta
+            voluptatem! Aliquid magni temporibus voluptatibus consectetur
+            aliquam rem.quae quia velit quidem esse, mollitia deleniti dicta
+            voluptatem! Aliquid magni temporibus voluptatibus consectetur
+            aliquam rem.
+          </h5>
+        </div>
+
+        <div class="row mx-5 mt-5">
+          <div
+            class="col-lg-4 course-card"
+            *ngFor="let course of courses; let i = index"
+          >
+            <div class="card course-content">
+              <img
+                src="http://projectegy-002-site6.gtempurl.com/Content/Images/Categories/{{
+                  courses[i].CourseImageUrl
+                }}"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-5">
+                    <h6>
+                      <mat-icon>file_copy</mat-icon> Lessons
+                      <strong>{{ courses[i].LessonsCount }} </strong>
+                    </h6>
+                  </div>
+                  <div class="col-sm-7">
+                    <h6>
+                      <mat-icon>access_alarm</mat-icon> Duration
+                      <strong>35mins</strong>
+                    </h6>
+                  </div>
+                </div>
+                <h5 class="card-title mt-2">{{ courses[i].EnCourseTitle }}</h5>
+                <p class="card-text">
+                  {{ courses[i].EnCourseDiscription }}
+                </p>
+                <div  > 
+                  <a
+                  (click)="submit(courses[i].CourseId)"
+                  [routerLink]="['/lessons']  "
+                  routerLinkActive="router-link-active"
+                  class="btn course-btn"
+                  >Start Now</a
+                >
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <button type="button" class="btn butn mx-4 px-5 py-2 mt-5">
+            View more courses
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+
+<app-endpage></app-endpage>

@@ -1,0 +1,245 @@
+<app-navbar></app-navbar>
+<!-- <pre *ngFor="let lesson of lessons; let i = index">
+  <p>{{lessons[i].EnLessonName}}</p>
+  <p>{{lessons | json}}</p> -->
+
+<!-- <p>{{lessons[0].LessonVideoUrl}}</p> -->
+<!-- </pre> -->
+
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="top">
+      <div class="container">
+        <div class="row">
+          <h1 class="my-5 fw-light">
+            {{ lessons[0]?.EnLessonName }}
+          </h1>
+          <div class="restaurant">
+            <youtube-player
+              class="youtube"
+              [videoId]="lessons[0]?.LessonVideoUrl.split('v=')[1]"
+              (ready)="savePlayer($event)"
+              [playerVars]="playerVars"
+            >
+            </youtube-player>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="course-info">
+      <div class="container">
+        <div class="course-info">
+          <div class="row mt-5 py-3">
+            <div class="col-sm-3">
+              <h6>Beginner Course</h6>
+              <h6>Course</h6>
+            </div>
+            <div class="col-sm-2">
+              <h6>34 minutes</h6>
+              <h6>Course Time</h6>
+            </div>
+            <div class="col-sm-4">
+              <h6>435 Personal</h6>
+              <h6>number of people</h6>
+            </div>
+            <div class="col-sm-3">
+              <a
+                [routerLink]="['/question']"
+                routerLinkActive="router-link-active"
+              >
+                <button type="button" class="btn butn px-5 py-2">
+                  Start course
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="course-help">
+      <div class="container">
+        <div class="row mt-5">
+          <h3 class="">How This Course will help your career</h3>
+          <h5 class="my-3">What You will Learn</h5>
+          <ul class="mx-lg-5">
+            <li *ngFor="let lesson of lessons">
+              {{ lesson.EnLessonDescription }}
+            </li>
+            <!-- <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos in
+              nemo temporibus molestias!
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+              nostrum facilis illo molestiae soluta iusto consectetur similique
+              magnam quas natus consequatur, voluptate ab corporis veniam
+              dignissimos amet, consequuntur corrupti in.
+            </li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur elit. Eos in nemo
+              temporibus molestias!
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe?
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="lessons">
+      <div class="container">
+        <div class="row mt-5">
+          <h3 class="">Lessons in This Course Each</h3>
+        </div>
+
+        <div class="lesson" *ngFor="let lesson of lessons; let i = index">
+          <div
+            class="row"
+            style="background-color: #f0f0f0; border-radius: 10px"
+          >
+            <div class="col-lg-11 col-md-10">
+              <p class="my-2">
+                <mat-icon class="mx-2" style="color: green"
+                  >play_circle_filled</mat-icon
+                >
+                {{ lessons[i].EnLessonName }}
+              </p>
+            </div>
+            <div class="col-lg-1 col-md-2">
+              <p class="my-2">(1.5mins)</p>
+            </div>
+          </div>
+
+          <!-- <div class="row my-3">
+            <div class="col-lg-11 col-md-10">
+              <p>
+                <mat-icon class="mx-2" style="color: gold"
+                  >play_circle_filled</mat-icon
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Blanditiis, eaque?
+              </p>
+            </div>
+            <div class="col-lg-1 col-md-2">
+              <p>(1.5mins)</p>
+            </div>
+          </div>
+
+          <div
+            class="row"
+            style="background-color: #f0f0f0; border-radius: 10px"
+          >
+            <div class="col-lg-11 col-md-10">
+              <p class="my-2">
+                <mat-icon class="mx-2" style="color: green"
+                  >play_circle_filled</mat-icon
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Blanditiis, eaque?
+              </p>
+            </div>
+            <div class="col-lg-1 col-md-2">
+              <p class="my-2">(1.5mins)</p>
+            </div>
+          </div>
+
+          <div class="row my-3">
+            <div class="col-lg-11 col-md-10">
+              <p>
+                <mat-icon class="mx-2" style="color: gold"
+                  >play_circle_filled</mat-icon
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Blanditiis, eaque?
+              </p>
+            </div>
+            <div class="col-lg-1 col-md-2">
+              <p>(1.5mins)</p>
+            </div>
+          </div>
+
+          <div
+            class="row"
+            style="background-color: #f0f0f0; border-radius: 10px"
+          >
+            <div class="col-lg-11 col-md-10">
+              <p class="my-2">
+                <mat-icon class="mx-2" style="color: green"
+                  >play_circle_filled</mat-icon
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Blanditiis, eaque?
+              </p>
+            </div>
+            <div class="col-lg-1 col-md-2">
+              <p class="my-2">(1.5mins)</p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <section id="other-benefit" class="mt-5">
+      <div class="container">
+        <div class="row">
+          <h3 class="my-5 text-center">How Others Have Benefited</h3>
+
+          <div class="row">
+            <div class="offset-lg-3 col-lg-1">
+              <img src="assets/other.jpg" alt="" />
+            </div>
+            <div class="col-lg-5">
+              <h6 class="mx-4">name of person,countary</h6>
+              <p class="mx-3">
+                "Lorem ipsum dolor sit amet consectetur Asperiores quidem
+                numquam. Sint aliquid quas nam quaerat? Provident earum
+                reprehenderit, magnam facere blanditiis iure natus itaque quo
+                quae adipisci quia?"
+              </p>
+              <hr />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="offset-lg-3 col-lg-1">
+              <img src="assets/other.jpg" alt="" />
+            </div>
+            <div class="col-lg-5">
+              <h6 class="mx-4">name of person,countary</h6>
+              <p class="mx-3">
+                "Lorem ipsum dolor sit amet consectetur Asperiores quidem
+                numquam. Sint aliquid quas nam quaerat? Provident earum
+                reprehenderit, magnam facere blanditiis iure natus itaque quo
+                quae adipisci quia?"
+              </p>
+              <hr />
+            </div>
+          </div>
+
+          <div class="row mb-5">
+            <div class="offset-lg-3 col-lg-1">
+              <img src="assets/other.jpg" alt="" />
+            </div>
+            <div class="col-lg-5">
+              <h6 class="mx-4">name of person,countary</h6>
+              <p class="mx-3">
+                "Lorem ipsum dolor sit amet consectetur Asperiores quidem
+                numquam. Sint aliquid quas nam quaerat? Provident earum
+                reprehenderit, magnam facere blanditiis iure natus itaque quo
+                quae adipisci quia?"
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+
+<app-endpage></app-endpage>

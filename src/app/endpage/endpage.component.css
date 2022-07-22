@@ -1,0 +1,136 @@
+/* //////////////////////////////////// footer ///////////////////////////////////////// */
+#fotter {
+  background-image: url("../../assets/images/footer.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.foter {
+  color: #fff;
+  margin-top: 8rem;
+  width: 100%;
+  /* background-color: #d3381d; */
+}
+.foter a {
+  color: #fff;
+}
+.download img {
+  width: 100%;
+}
+
+.read-more {
+  background-color: transparent;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  font-size: large;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.limitTextHeight {
+  height: 21vh;
+  overflow: hidden;
+}
+
+/* ////////////////////////////////////////////////////////////// Responsive ////////////////////////////////////////////////////////////////// */
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .limitTextHeight {
+    height: 14vh;
+  }
+  .read-more {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .limitTextHeight {
+    height: 13vh;
+  }
+  .read-more {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .limitTextHeight {
+    height: 13vh;
+  }
+  .foter {
+    margin-bottom: 8rem;
+  }
+  .read-more {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 377px) and (max-width: 575.98px) {
+  .download .row > * {
+    flex-shrink: 0;
+    width: 33%;
+  }
+  .read-more {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 260px) and (max-width: 376px) {
+  .download img {
+    margin-bottom: 1rem;
+  }
+  .read-more {
+    margin-bottom: 1rem;
+  }
+}
+.flinks a {
+  text-decoration: none;
+}
+.contact-us,
+.location-icon {
+  font-weight: 700;
+}
+.contact-us i,
+.location-icon i {
+  margin-right: 10px;
+}
+.email {
+  margin-left: 2.7rem;
+}
+.email a {
+  text-decoration: none;
+  font-weight: 500;
+}
+.icons {
+  margin-left: 1rem;
+}
+.icons i {
+  font-size: 2rem;
+  margin: 12px;
+  cursor: pointer;
+  margin-top: 4rem;
+}
+.location p {
+  margin-left: 2.1rem;
+}
+.list {
+  align-items: center;
+}
+
+.list a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.75px;
+}
+.list a h5 {
+  /* font-family: "Roboto"; */
+  /* font-family: "Cairo"; */
+  font-weight: 400;
+  font-size: 20px;
+
+  color: #ffffff;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}

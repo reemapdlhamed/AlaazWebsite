@@ -1,0 +1,91 @@
+/* //////////////////////////////////// top ///////////////////////////////////////// */
+.restaurant
+{
+    width:100%;
+    height: 40vh;
+    background-image: url("http://projectegy-002-site6.gtempurl.com/UploadedFiles/Partner.png");
+    /* background-image: url("/assets/restuarant.jpg"); */
+    background-size: cover;
+    border-radius: 15px;
+}
+.top
+{
+    margin: 10rem 0rem 0rem 2rem;
+    color: #fff;
+}
+/* //////////////////////////////////// add-restaurant ///////////////////////////////////////// */
+.add-restuarant
+{
+    margin-top: 4rem;
+    border: 2px solid #acacac77;
+    border-radius: 10px;
+    box-shadow: 1px 2px 2px #c2c2c234;
+}
+.add-restuarant label
+{
+    color: #636363;
+}
+.add-restuarant input
+{
+    width: 85%;
+    padding: 0.4rem 0rem;
+    border: 2px solid #d1d1d1;
+    border-radius: 5px;
+}
+.add-restuarant select
+{
+    width: 85%;
+    padding: 0.4rem 0rem;
+    border-radius: 5px;
+    border: 2px solid #d1d1d1;
+}
+.add-restuarant button
+{
+    background-color: #e74c25;
+    border: 1px solid #e74c25;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 600;
+}
+/* //////////////////////////////////// benefit ///////////////////////////////////////// */
+#benefit
+{
+    margin-top: 6rem;
+}
+.benefit-icon
+{
+    background-color: #fca910;
+    font-size: 40px;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    padding-top: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+/* //////////////////////////////////// academy ///////////////////////////////////////// */
+.download-content
+{
+    margin-top: 8rem;
+}
+.academy-photo
+{
+    width: 80%;
+    margin-top: 5rem;
+}
+.butn
+{
+    background-color: #e4492e;
+    color: #fff;
+    border:1px solid #e4492e;
+}
+
+/* ////////////////////////////////////////////////////////////// Responsive ////////////////////////////////////////////////////////////////// */
+@media (min-width: 768px) and (max-width: 991.98px) 
+{ .academy-photo{margin-top: 10rem;} }
+
+@media (min-width: 377px) and (max-width: 575.98px) 
+{ .top { margin: 6rem 0rem 0rem 2rem;} }
+
+@media (min-width: 260px) and (max-width: 376px)
+{ .top { margin: 6rem 0rem 0rem 2rem;} }

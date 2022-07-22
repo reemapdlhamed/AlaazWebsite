@@ -1,0 +1,152 @@
+<app-navbar></app-navbar>
+
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section id="top">
+      <div class="container">
+        <div class="row mt-5">
+          <div class="restaurant">
+            <div class="top">
+              <h1><strong> Cooking Master Class </strong></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-lg-12">
+            <nav
+              aria-label="breadcrumb"
+              style="background-color: #f0f0f0; border-radius: 6px"
+            >
+              <ol class="breadcrumb py-1 px-3">
+                <li class="breadcrumb-item">Home</li>
+                <li class="breadcrumb-item"><a href="#"> Login</a></li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <!-- <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="text-center">
+                <h1>Login</h1>
+                <h6>Please enter E-mail $ Password</h6>
+              </div>
+              <form [formGroup]="loginForm" (ngSubmit)="login()">
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleInputMobileNumber" class="form-label"
+                      >Mobile Number
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputMobileNumber"
+                      aria-describedby="mobilenumber"
+                    />
+                    <div id="mobilenumber" class="form-text">
+                      We Will Never Share Your number With anyone
+                    </div>
+                    <span class="text-danger">Mobile number is Required</span>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword" class="form-label"
+                      >Password</label
+                    >
+                    <span class="text-danger"> is Required</span>
+
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="exampleInputPassword"
+                    />
+                  </div>
+                  <button type="submit" class="btn btn-primary">Login</button>
+                  <h6 class="mt-4">
+                    Forgot Your Password
+                    <a
+                      [routerLink]="['/reset']"
+                      routerLinkActive="router-link-active"
+                      >Click Here</a
+                    >
+                  </h6>
+                </form>
+                <a style="color: #fff; margin-top: 10px" routerLink="/signup">
+                  New User?Click to signup</a
+                >
+              </form>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <form (submit)="onlogin(loginForm)" #loginForm="ngForm">
+      <div class="container">
+        <div class="mx-5 mt-5">
+          <h4>Login to Your Account</h4>
+          <h5 class="mt-3">Enter Your Phone Number</h5>
+
+          <div class="row">
+            <div class="col-lg-4 mt-3">
+              <label for="examplePhone">Mobile Number</label>
+              <input
+                type="text"
+                name="phone"
+                placeholder="Enter your Mobile Number"
+                style="width: 100%"
+                class="mt-2"
+                id="examplePhone"
+                aria-describedby="phone"
+                ngModel
+                #phoneInput ='ngModel'
+                required
+              />
+            </div>
+            <div class="col-lg-4 mt-3">
+              <label for="InputPassword">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="InputPassword"
+                placeholder="Enter your user Password"
+                style="width: 100%"
+                class="mt-2"
+                ngModel
+                #passwordInput="ngModel"
+              />
+            </div>
+          </div>
+
+          <button class="btn butn rounded mx-sm-2 px-5 text-center mt-4">
+            LOGIN
+          </button>
+
+          <h6 class="mt-4">
+            Forgot Your Password
+            <a [routerLink]="['/reset']" routerLinkActive="router-link-active"
+              >Click Here</a
+            >
+          </h6>
+        </div>
+      </div>
+    </form>
+    </section>
+  </body>
+</html>
+
+<app-endpage></app-endpage>

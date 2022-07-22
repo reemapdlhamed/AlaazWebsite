@@ -1,0 +1,84 @@
+/* //////////////////////////////////// top ///////////////////////////////////////// */
+.restaurant iframe {
+  width: 100%;
+  height: 50vh;
+  border-radius: 20px;
+}
+/* //////////////////////////////////// course-info ///////////////////////////////////////// */
+#course-info {
+  background-color: #e0e0e0;
+}
+.butn {
+  background-color: #dd3b1e;
+  color: #fff;
+  border: 1px solid #dd3b1e;
+  border-radius: 10px;
+}
+/* //////////////////////////////////// course-info ///////////////////////////////////////// */
+#course-help li {
+  font-weight: 400;
+  font-size: 17px;
+}
+#course-help ul {
+  list-style-type: square;
+}
+/* //////////////////////////////////// lessons ///////////////////////////////////////// */
+#lessons p {
+  font-weight: 400;
+  font-size: 18px;
+}
+/* //////////////////////////////////// other-benefit ///////////////////////////////////////// */
+#other-benefit {
+  background-color: #333;
+  color: #fff;
+  overflow: hidden;
+}
+
+#other-benefit img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+#other-benefit hr {
+  width: 35%;
+  height: 2px;
+  background-color: #fff;
+  margin-left: 9rem;
+}
+
+/* ////////////////////////////////////////////////////////////// Responsive ////////////////////////////////////////////////////////////////// */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .restaurant iframe {
+    height: 30vh;
+  }
+  .lesson .row {
+    --bs-gutter-x: 0rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .restaurant iframe {
+    height: 30vh;
+  }
+  .lesson .row {
+    --bs-gutter-x: 0rem;
+  }
+}
+
+@media (min-width: 377px) and (max-width: 575.98px) {
+  .restaurant iframe {
+    height: 30vh;
+  }
+  .course-info .row > * {
+    flex-shrink: 0;
+    width: 33%;
+  }
+}
+
+@media (min-width: 260px) and (max-width: 376px) {
+  .course-info .row > * {
+    flex-shrink: 0;
+    width: 50%;
+  }
+}
+

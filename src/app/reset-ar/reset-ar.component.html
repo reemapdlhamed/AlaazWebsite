@@ -1,0 +1,58 @@
+<app-navbar-ar></app-navbar-ar>
+
+<html>
+
+    <head>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    
+    <body>
+
+      <section id="top">
+        <div class="container">
+            <div class="row mt-5" dir="rtl">
+             <div class="restaurant">
+                <div class="top">
+                  <h1> <strong> دروس الطبخ </strong> </h1>
+                </div>
+             </div>
+            </div>
+        </div>
+      </section>
+
+      <section>
+          <div class="container">
+              <div class="row mt-5" dir="rtl">
+                  <div class="col-lg-12">
+                    <nav aria-label="breadcrumb" style="background-color: #f0f0f0; border-radius: 6px;">
+                        <ol class="breadcrumb py-1 px-3">
+                          <li class="breadcrumb-item">الرئيسية </li>
+                          <li class="breadcrumb-item">/<a href="#"> تغيير كلمة المرور</a></li>
+                        </ol>
+                      </nav>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <section>
+          <div class="container">
+              <div class="row mx-5 mt-5" dir="rtl">
+                  <h4>تغيير كلمة المرور</h4>
+                  <h5 class="mt-3">ادخل رقم هاتفك</h5>
+                  <div class="col-lg-4 mt-3">
+                      <input type="text" placeholder="ادخل رقم هاتفك" style="width: 100%;">
+                  </div>
+                  <div class="col-lg-2 mt-3">
+                      <button class="btn butn rounded mx-lg-4 mx-sm-2 px-5 text-center"> دخول </button>
+                  </div>
+
+                  <h6 class="mt-4"> رجوع الى تسجيل الدخول <a  [routerLink]="['/login']" routerLinkActive="router-link-active">اضغط هنا</a></h6>
+              </div>
+          </div>
+      </section>
+   
+    </body>
+</html>
+
+<app-endpage-ar></app-endpage-ar>

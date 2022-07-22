@@ -1,0 +1,53 @@
+/* //////////////////////////////////// top ///////////////////////////////////////// */
+.restaurant
+{
+    width:100%;
+    height: 40vh;
+    background-image: url("/assets/course.jpg");
+    background-size: 100% 100%;
+    border-radius: 15px;
+}
+/* //////////////////////////////////// course ///////////////////////////////////////// */
+.course-content
+{
+    border: transparent;
+    border-radius: 15px;
+    background-color: #f3f3f3;
+}
+.course-content img
+{
+    height: 26vh;
+    border-radius: 15px 15px 0px 0px;
+}
+.course-btn
+{
+    background-color: #fff;
+    border: 1px solid #ee3f09;
+    padding: 0.5rem 8.5rem;
+    text-align: center;
+}
+.butn
+{
+    background-color: #e4492e;
+    color: #fff;
+    border:1px solid #e4492e;
+    border-radius: 10px;
+}
+/* ////////////////////////////////////////////////////////////// Responsive ////////////////////////////////////////////////////////////////// */
+@media (min-width: 1200px) and (max-width: 1290px)
+{ .course-btn {padding: 0.5rem 6rem;} }
+
+@media (min-width: 992px) and (max-width: 1199.98px) 
+{ .course-btn {padding: 0.5rem 4rem;} .course-content img{ height: 18vh;}}
+
+@media (min-width: 768px) and (max-width: 991.98px) 
+{ .course-btn {padding: 0.5rem 6rem;} .course-card{margin-bottom: 1rem;}}
+
+@media (min-width: 576px) and (max-width: 767.98px) 
+{ .course-btn {padding: 0.5rem 6rem;} .course-card{margin-bottom: 1rem;}}
+
+@media (min-width: 377px) and (max-width: 575.98px) 
+{ .course-btn {padding: 0.5rem 4.5rem;} .course-card{margin-bottom: 1rem;}}
+
+@media (min-width: 260px) and (max-width: 376px)
+{ .course-btn {padding: 0.5rem 3rem;} .course-card{margin-bottom: 1rem;}}

@@ -1,0 +1,119 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="text-center">
+          <h1>Signup</h1>
+          <!-- <h6>Please enter E-mail $ Password</h6> -->
+        </div>
+        <form>
+          <form (submit)="onSignUp(signupForm)" #signupForm="ngForm">
+            <div class="mb-3">
+              <label for="exampleInputEmail" class="form-label">Email </label>
+              <input
+                placeholder="enter email"
+                type="email"
+                name="email"
+                ngModel
+                class="form-control"
+                id="exampleInputEmail"
+                aria-describedby="email"
+                #emailInput="ngModel"
+                required
+              />
+              <div id="email" class="form-text">
+                We will never share youe E-mail with anyone
+              </div>
+              <span class="text-danger" *ngIf="emailInput.invalid"
+                >Email is Required</span
+              >
+            </div>
+            <label for="exampleInputName" class="form-label">Name </label>
+            <input
+              type="text"
+              placeholder="enter your name"
+              name="name"
+              ngModel
+              class="form-control"
+              id="exampleInputName"
+              aria-describedby="name"
+              #nameInput="ngModel"
+              required
+            />
+
+            <span class="text-danger" *ngIf="nameInput.invalid"
+              >name is Required</span
+            >
+            <br />
+            <label for="exampleInputPhone" class="form-label"
+              >Mobile number
+            </label>
+            <input
+              type="text"
+              name="phone"
+              ngModel
+              class="form-control"
+              id="exampleInputPhone"
+              aria-describedby="phone"
+              #phoneInput="ngModel"
+              required
+              placeholder="enter your mobile number"
+            />
+
+            <span class="text-danger" *ngIf="phoneInput.invalid"
+              >Mobile number is Required</span
+            >
+
+            <div class="mb-3">
+              <label for="exampleInputPassword" class="form-label"
+                >Password</label
+              >
+              <input
+                name="password"
+                type="password"
+                ngModel
+                class="form-control"
+                id="exampleInputPassword"
+                #passwordInput="ngModel"
+                required
+                placeholder="enter password "
+              />
+              <div id="password" class="form-text">
+                 password consist of a combination of uppercase and
+                lowercase letters, numbers and special symbols
+              </div>
+              <span class="text-danger" *ngIf="passwordInput.invalid"
+                >password is Required</span
+              >
+            </div>
+            <!-- <div class="mb-3">
+              <label for="exampleInputImage" class="form-label">Image</label>
+              <input
+                name="image"
+                type="text"
+                ngModel
+                class="form-control"
+                id="exampleInputImage"
+                #imageInput="ngModel"
+                required
+                placeholder="enter an image "
+              /> -->
+            <!-- <span class="text-danger" *ngIf="imageInput.invalid"
+                >password is Required</span
+              > -->
+            <!-- </div> -->
+            <button type="submit" class="btn"  >Signup</button>
+          </form>
+          <a
+            style="color: #fff; margin-top: 10px; text-decoration: none"
+            routerLink="/login"
+          >
+            Already have an account?Click to signin</a
+          >
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<app-endpage></app-endpage>

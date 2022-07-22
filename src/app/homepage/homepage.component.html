@@ -1,0 +1,314 @@
+<app-navbar></app-navbar>
+
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section id="best" class="">
+      <div class="container">
+        <div class="row mt-5" dir="rtl">
+          <div class="col-sm-6">
+            <div class="mt-5">
+              <h1 class="mt-5" style="text-align: left">
+                {{ homes?.EnSection1Title }}
+              </h1>
+              <p style="text-align: left">
+                {{ homes?.EnSection1Description }}
+              </p>
+              <!-- <button type="button" class="btn butn rounded-pill mx-lg-4 mx-sm-2 px-5">
+                      <a [routerLink]="['/courses-ar']" routerLinkActive="router-link-active" style="color: #fff;">اضغط</a></button>
+                    <button type="button" class="btn buttn rounded-pill px-5">
+                      <a [routerLink]="['/reset-ar']" routerLinkActive="router-link-active" style="color: #ff5100;">اضغط</a></button> -->
+            </div>
+          </div>
+
+          <div class="col-sm-2">
+            <img class="s-photo" src="assets/food2.jpg" alt="" />
+          </div>
+
+          <div class="col-sm-4  ">
+            <div class="mx-md-5">
+              <img class="f-photo" src="assets/food1.jpg" alt="" />
+              <img class="t-photo" src="assets/food3.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="order">
+      <div class="container">
+        <div class="row" dir="rtl">
+          <div class="col-md-5">
+            <!-- <img class="app-photo" src="assets/app1.png" alt=""> -->
+            <img
+              class="app-photo"
+              src="http://projectegy-002-site6.gtempurl.com/UploadedFiles/app.png"
+              alt=""
+            />
+          </div>
+          <div class="col-md-6">
+            <div class="download-content">
+              <h1 class="mb-3" style="text-align: left">
+                {{ homes?.EnMobileSectionTitle }}
+              </h1>
+              <p style="text-align: left">
+                {{ homes?.EnMobileSectionDescription }}
+              </p>
+              <div class="download">
+                <div class="row mt-5">
+                  <div class="col-sm-4">
+                    <a href="{{ homes?.GooglePlayLink }}"
+                      ><img src="assets/googleplay.png" alt=""
+                    /></a>
+                  </div>
+                  <div class="col-sm-4">
+                    <a href="{{ homes?.AppStoreLink }} "
+                      ><img src="assets/applestore.png" alt=""
+                    /></a>
+                  </div>
+                  <div class="col-sm-4">
+                    <a href="{{ homes?.AppGellaryLink }} "
+                      ><img src="assets/appgallery.jpg" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="row" dir="rtl">
+        <div class="col-sm-12 text-center mt-5">
+          <h2>{{ homes?.EnExperinceSection1Title }}</h2>
+          <p>
+            {{ homes?.EnExperinceSection1Description }}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <section id="dileviry">
+      <div class="container">
+        <div class="row mt-5" dir="rtl">
+          <div class="col-sm-6">
+            <div class="mt-5">
+              <h1 class="mt-5" style="text-align: left">
+                {{ homes?.EnFoodSection1Title }}
+              </h1>
+              <p style="text-align: left">
+                {{ homes?.EnFoodSection1Description }}
+              </p>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="rounded-circle">
+              <img class="f-photo" src="assets/dileviry.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="join">
+      <div class="container">
+        <div class="row mt-5" dir="rtl">
+          <div class="col-sm-12 text-center">
+            <h2>
+              {{ homes?.EnJobSectionTitle }}
+            </h2>
+            <p>
+              {{ homes?.EnJobSectionDescription }}
+            </p>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col-md-6 col-sm-12">
+            <div class="join">
+              <div class="row g-0">
+                <div class="col-sm-6">
+                  <div
+                    class="card-body"
+                    style="
+                      background-color: #e2e2e2;
+                      border: 1px transparent;
+                      border-radius: 15px 0px 0px 15px;
+                    "
+                  >
+                    <h5 class="card-title">فلتصبح شريكأ</h5>
+                    <p class="card-text">
+                      هذه بطاقة أوسع مع نص طبيعي إلى محتوى إضافي. أوسع مع نص
+                      داعم أدناه كإرشاد إضافي هذا المحتوى طبيعي إلى محتوى إضافي
+                      هذا المحتوى هو إضافي هذا المحتوى أطول قليلا.
+                    </p>
+                    <p class="card-text">
+                      <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-6 join-image">
+                  <!-- <img src="assets/diliviry.jpg" class="img-fluid" alt="" style=" border-radius:0px 15px 15px 0px;"> -->
+                  <img
+                    src="http://projectegy-002-site6.gtempurl.com/UploadedFiles/diliviry.png"
+                    class="img-fluid"
+                    alt=""
+                    style="border-radius: 0px 15px 15px 0px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-sm-12">
+            <div class="join">
+              <div class="row g-0">
+                <div class="col-sm-6">
+                  <div
+                    class="card-body"
+                    style="
+                      background-color: #e2e2e2;
+                      border: 1px transparent;
+                      border-radius: 15px 0px 0px 15px;
+                    "
+                  >
+                    <h5 class="card-title">وظائف التوصيل</h5>
+                    <p class="card-text">
+                      هذه بطاقة أوسع مع نص طبيعي إلى محتوى إضافي. أوسع مع نص
+                      داعم أدناه كإرشادإضافي هذا المحتوى طبيعي إلى محتوى إضافي
+                      هذا المحتوى هو إضافي هذا المحتوى أطول قليلا.
+                    </p>
+                    <p class="card-text">
+                      <!-- <small class="text-muted">اخر تحديث منذ 3 دقائق</small> -->
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-6 join-image">
+                  <!-- <img src="assets/diliviry.jpg" class="img-fluid" alt="" style="border-radius:0px 15px 15px 0px;"> -->
+                  <img
+                    src="http://projectegy-002-site6.gtempurl.com/UploadedFiles/diliviry.png"
+                    class="img-fluid"
+                    alt=""
+                    style="border-radius: 0px 15px 15px 0px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="academy">
+      <div class="container">
+        <div class="row" dir="rtl">
+          <div class="col-md-6">
+            <!-- <img class="academy-photo" src="assets/academy.jpg" alt=""> -->
+            <img
+              class="academy-photo"
+              src="http://projectegy-002-site6.gtempurl.com/UploadedFiles/academy.png"
+              alt=""
+            />
+          </div>
+          <div class="col-md-6">
+            <div class="download-content">
+              <h1 class="mb-3" style="text-align: center">
+                {{ homes?.EnEduSectionTitle }}
+              </h1>
+              <p class="mb-5" style="text-align: left">
+                {{ homes?.EnEduSectionDescription }}
+                <!-- سيتم تغيير هذا النص و النصوص و الملاحظات بالاصليه عندما يوافق و
+                التصميم للموقع فسيتم استبدال هذا النصوص يوافق العميل على الشكل
+                النهائي التصميم استبدال هذا النص و التصوص الاخرى و الملاحظات
+                بالنصوص و الملاحظات بالاصليه عندما يوافق و التصميم للموقع فسيتم
+                استبدال هذا النصوص , الملاحظات بالنصوص و الملاحظات بالاصليه -->
+              </p>
+              <a
+                [routerLink]="['/academy']"
+                routerLinkActive="router-link-active"
+              >
+                <button
+                  type="button"
+                  class="btn shaped-btn butn rounded-pill mx-4 px-5"
+                >
+                  Check now
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="partner">
+      <div class="container">
+        <div class="row mt-5" dir="rtl">
+          <div class="col-sm-12 text-center mt-5">
+            <h2>{{ homes?.EnRestSectionTitle }}</h2>
+            <p>
+              {{ homes?.EnRestSectionDescription }}
+              <!-- سيتم تغيير النص والملاحظات بالاصليه عندما يوافق و التصميم للموقع
+              فسيتم استبدال هذا النصوص يوافق العميل على الشكل النهائي التصميم
+              استبدال هذا النص و التصوص الاخرى و الملاحظات بالنصوص و الملاحظات
+              بالاصليه بالنصوص و الملاحظات بالاصليه -->
+            </p>
+          </div>
+        </div>
+        <!-- end of section -->
+
+        <div class="patner">
+          <div class="row mt-5" dir="rtl">
+            <div
+              *ngFor="let names of homes?.Stores"
+              class="col-lg-2 col-md-4 col-sm-5 m-lg-auto"
+              style="border-radius: 15px 0px 0px 15px"
+            >
+              <div class="partner-card">
+                <img
+                  src="http://projectegy-002-site6.gtempurl.com/content/images/stores/{{
+                    names.ImageUrl
+                  }}"
+                  alt=""
+                  style="border-radius: 50%"
+                />
+
+                <div class="layer3 partner-contnt">
+                  <div class="layerContent">
+                    <h6 class="kitchen-name">{{ names.Name }}</h6>
+                    <!-- <div class="row"> -->
+                    <div class="col-lg-7 starr">
+                      <div class="">
+                        <mat-icon
+                          class="star"
+                          *ngFor="
+                            let i of [].constructor(stringTonumber(names.Rate))
+                          "
+                        >
+                          grade
+                        </mat-icon>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+    </section>
+  </body>
+
+  <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+</html>
+
+<app-endpage></app-endpage>

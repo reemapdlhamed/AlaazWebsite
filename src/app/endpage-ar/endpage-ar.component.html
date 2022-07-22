@@ -1,0 +1,94 @@
+<html>
+  <footer id="fotter">
+    <div class="foter">
+      <div class="row" dir="rtl">
+        <div class="col-lg-4">
+          <div class="mx-5 mt-5">
+            <h3><img src="assets/images/footer-logo.png" alt="" /></h3>
+            <p>
+              سيتم تغيير هذا النص و النصوص الآخرى عندما يوافق العميل على الشكل
+              النهائي و التصميم للموقع فسيتم استبدال هذا النص بالاصلي
+            </p>
+            <p>
+              سيتم تغيير هذا النص و النصوص الآخرى عندما يوافق العميل على الشكل
+              النهائي و التصميم للموقع فسيتم استبدال هذا النص و التصوص الاخرى و
+              الملاحظات بالنصوص و الملاحظات بالاصليه
+            </p>
+            <div class="download">
+              <div class="row mt-5">
+                <div class="col-sm-4">
+                  <a href="https://www.{{ abouts?.GooglePlay }}"
+                    ><img src="assets/googleplay.png" alt=""
+                  /></a>
+                </div>
+                <div class="col-sm-4">
+                  <a href="https://www.{{ abouts?.AppStore }}"
+                    ><img src="assets/applestore.png" alt=""
+                  /></a>
+                </div>
+                <div class="col-sm-4">
+                  <a href="https://www.{{ abouts?.AppGellary }}"
+                    ><img src="assets/app.png" alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <h6 style="font-size: small" class="my-3">
+              © 2022 . All rights reserved Alaaz
+            </h6>
+          </div>
+        </div>
+
+        <div class="col-lg-3 flinks">
+          <div class="mt-5 mx-5">
+            <a href=""><h5>الرئيسية</h5></a>
+            <a href=""><h5>من نحن</h5></a>
+            <!-- <a href=""><h5>تطبيقنا</h5></a>
+            <a href=""><h5>تواصل معنا</h5></a> -->
+            <a href=""><h5>كن شريكاً</h5></a>
+            <a href=""><h5>تحتاج لسائق</h5></a>
+            <a href=""><h5>مجالك</h5></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="mt-5 mx-5">
+            <h6>
+              <mat-icon style="color: #fff">ارسل</mat-icon> للتواصل معنا أو
+              الاجابة على أي أسئلة :
+            </h6>
+            <h6 style="font-size: medium" class="mb-4 flinks">
+              <!-- E-mail:info@Alaaz.com -->
+              <a href="mailto:{{ abouts?.Email }}"> {{ abouts?.Email }}</a>
+            </h6>
+
+            <!-- <h6> <mat-icon style="color: #fff;">send</mat-icon> مكتب السعودية العربية :</h6>
+            <p class="mb-4">التصميم للموقع فسيتم استبدال هذا النص و التصوص الآخرى بالاصلي</p> -->
+
+            <div [ngClass]="{ limitTextHeight: isReadMore }">
+              <!-- <h6> <mat-icon style="color: #fff;">send</mat-icon> Saudi Arabia Office:</h6>
+              <p class="mb-4">  This is long text replaced with reading more/less link example in Angular application paragraph text shown here continue THis is long text replaced with read more/less link example in Angular application paragraph text shown here continue continue
+                This is long text replaced with reading more/less link example in Angular application paragraph text shown here continue THis is long text replaced with read more/less link example in Angular application paragraph text shown here continue
+                continue THis is long text replaced with reading more/less link example in Angular application paragraph text shown here continue THis is long text replaced with read more/less link example in Angular application paragraph text shown here
+                continue continue</p> -->
+              <h6>
+                <mat-icon style="color: #fff">send</mat-icon>
+
+                {{ abouts?.ArOfficeDetails }}
+              </h6>
+            </div>
+
+            <button
+              class="read-more"
+              type="button"
+              (click)="showText()"
+              *ngIf="abouts?.ArOfficeDetails.length >= 200"
+            >
+              {{ isReadMore ? "اقرا المزيد" : "اقرا اقل" }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>

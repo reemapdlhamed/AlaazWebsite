@@ -1,0 +1,173 @@
+<app-navbar-ar></app-navbar-ar>
+
+<html>
+    <head>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+
+      <section id="top">
+        <div class="container">
+            <div class="row" dir="rtl">
+             <h1 class="my-5 fw-light">كيفية التأكد من تنظيف و سلامة التوصيل</h1>
+             <div class="restaurant">  
+              <youtube-player
+              class="youtube"
+              [videoId]="lessons[0]?.LessonVideoUrl.split('v=')[1]"
+              (ready)="savePlayer($event)"
+              [playerVars]="playerVars"
+            >
+            </youtube-player>
+              <!-- <iframe src="https://www.youtube.com/embed/1urLN_06Mbc" title="YouTube video player" frameborder="0"
+               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+             </div>
+            </div>
+        </div>
+      </section>
+
+      <section id="course-info">
+        <div class="container">
+         <div class="course-info">
+          <div class="row mt-5 py-3" dir="rtl">
+            <div class="col-sm-3">
+              <h6>دورة المبتدئين</h6> 
+              <h6>دورة </h6>
+            </div>
+            <div class="col-sm-2">
+              <h6>34 دقيقة</h6> 
+              <h6>توقيت الدورة</h6>
+            </div>
+            <div class="col-sm-4">
+              <h6>435 شخص</h6> 
+              <h6>عدد الاشخاص</h6>
+            </div>
+            <div class="col-sm-3">
+              <a [routerLink]="['/question-ar']" routerLinkActive="router-link-active"> 
+                <button type="button" class="btn butn px-lg-5 px-md-3 py-2">ابدأ الدورة</button> </a>
+            </div>
+          </div>
+         </div>
+        </div>
+      </section>
+
+      <section id="course-help">
+        <div class="container">
+          <div class="row mt-5" dir="rtl">
+            <h3 class="">كيف ستساعدك هذه الدورة في حياتك المهنية</h3>
+            <h5 class="my-3"> ما الذي سوف تتعلمة </h5>
+            <ul class="mx-lg-5">
+              <li> عندما يوافق و التصميم للموقع فسيتم استبدال هذا النصوص , الملاحظات</li>
+              <li> عندما يوافق و التصميم للموقع فسيتم استبدال هذا النصوص , الملاحظات بالنصوص و الملاحظات بالاصلي</li>
+              <li> عندما يوافق و التصميم للموقع فسيتم استبدال هذا النصوص , الملاحظات بالنصوص و الملاحظات بالاصلي  عندما يوافق و التصميم للموقع فسيتم استبدال هذا النصوص , الملاحظات بالنصوص و الملاحظات بالاصلي </li>
+              <li> عندما يوافق الملاحظات بالاصلي</li>
+              <li> عندما يوافق و التصميم للموقع فسيتم استبدال هذا النصوص , الملاحظات بالنصوص </li>
+              <li> عندما يوافق و التصميم للموقع فسيتم استبدال هذا النصوص </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="lessons">
+          <div class="container">
+              <div class="row mt-5" dir="rtl">
+                <h3 class="">الدروس في هذه الدورة لكل منها</h3>
+              </div>
+
+             <div class="lesson">
+
+              <div class="row" style="background-color: #f0f0f0; border-radius: 10px;" dir="rtl">
+                  <div class="col-lg-11 col-md-10">
+                      <p class="my-2"> <mat-icon class="mx-2" style="color: green;">play_circle_filled</mat-icon> عندما يوافق و التصميم للموقع فسيتم استبدال هذا النصوص , الملاحظات</p>
+                  </div>
+                  <div class="col-lg-1 col-md-2">
+                      <p class="my-2">(1.5 د)</p>
+                  </div>
+              </div>
+
+              <div class="row my-3" dir="rtl">
+                <div class="col-lg-11 col-md-10">
+                    <p> <mat-icon class="mx-2" style="color: gold;">play_circle_filled</mat-icon>عندما يوافق و التصميم للموقع فسيتم استبدال هذا النصوص , الملاحظات</p>
+                </div>
+                <div class="col-lg-1 col-md-2">
+                    <p>(1.5 د)</p>
+                </div>
+              </div>
+
+              <div class="row" style="background-color: #f0f0f0; border-radius: 10px;" dir="rtl">
+                <div class="col-lg-11 col-md-10">
+                    <p class="my-2"> <mat-icon class="mx-2" style="color: green;">play_circle_filled</mat-icon>عندما يوافق و التصميم للموقع فسيتم استبدال هذا النصوص , الملاحظات</p>
+                </div>
+                <div class="col-lg-1 col-md-2">
+                    <p class="my-2">(1.5 د)</p>
+                </div>
+              </div>
+
+              <div class="row my-3" dir="rtl">
+              <div class="col-lg-11 col-md-10">
+                  <p> <mat-icon class="mx-2" style="color: gold;">play_circle_filled</mat-icon>عندما يوافق و التصميم للموقع فسيتم استبدال هذا النصوص , الملاحظات</p>
+              </div>
+              <div class="col-lg-1 col-md-2">
+                  <p>(1.5 د)</p>
+              </div>
+              </div>
+
+              <div class="row" style="background-color: #f0f0f0; border-radius: 10px;" dir="rtl">
+                <div class="col-lg-11 col-md-10">
+                    <p class="my-2"> <mat-icon class="mx-2" style="color: green;">play_circle_filled</mat-icon>عندما يوافق و التصميم للموقع فسيتم استبدال هذا النصوص , الملاحظات</p>
+                </div>
+                <div class="col-lg-1 col-md-2">
+                    <p class="my-2">(1.5 د)</p>
+                </div>
+              </div>
+            
+             </div>
+
+          </div>
+      </section>
+
+      <section id="other-benefit" class="mt-5">
+        <div class="container">
+            <div class="row">
+              <h3 class="my-5 text-center">كيف استفاد الآخرون</h3>
+
+              <div class="row" dir="rtl">
+                <div class=" col-lg-1 ">
+                  <img src="assets/other.jpg" alt="">
+                </div>
+                <div class=" col-lg-5 ">
+                  <h6 class="mx-4">اسم الشخص ، البلد</h6>
+                  <p class="mx-3">" عندما يوافق و التصميم للموقع فسيتم استبدال هذا النصوص , الملاحظات بالنصوص و الملاحظات بالاصلي  عندما يوافق و التصميم للموقع فسيتم استبدال هذا النصوص , الملاحظات بالنصوص و الملاحظات بالاصلي "</p>
+                  <hr>
+                </div>
+              </div>
+
+              <div class="row" dir="rtl">
+                <div class=" col-lg-1">
+                  <img src="assets/other.jpg" alt="">
+                </div>
+                <div class="col-lg-5">
+                  <h6 class="mx-4">اسم الشخص ، البلد</h6>
+                  <p class="mx-3">" عندما يوافق و التصميم للموقع فسيتم استبدال هذا النصوص , الملاحظات بالنصوص و الملاحظات بالاصلي  عندما يوافق و التصميم للموقع فسيتم استبدال هذا النصوص , الملاحظات بالنصوص و الملاحظات بالاصلي "</p>
+                  <hr>
+                </div>
+              </div>
+
+              <div class="row" dir="rtl">
+                <div class="col-lg-1">
+                  <img src="assets/other.jpg" alt="">
+                </div>
+                <div class="col-lg-5">
+                  <h6 class="mx-4">اسم الشخص ، البلد</h6>
+                  <p class="mx-3">" عندما يوافق و التصميم للموقع فسيتم استبدال هذا النصوص , الملاحظات بالنصوص و الملاحظات بالاصلي  عندما يوافق و التصميم للموقع فسيتم استبدال هذا النصوص , الملاحظات بالنصوص و الملاحظات بالاصلي "</p>
+                  <hr>
+                </div>
+              </div>
+
+            </div>
+        </div>
+      </section>
+      
+    </body>
+</html>
+
+<app-endpage-ar></app-endpage-ar>

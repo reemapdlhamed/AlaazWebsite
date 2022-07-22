@@ -1,0 +1,42 @@
+.restaurant
+{
+    width:100%;
+    height: 40vh;
+    background-image: url("/assets/course.jpg");
+    background-size: cover;
+    border-radius: 15px;
+}
+.top
+{
+    margin: 14rem 0rem 0rem 2rem;
+    color: #fff;
+}
+.courses
+{
+    background-color: #f3f3f3;
+    padding-bottom: 5rem;
+}
+.butn
+{
+    background-color: #e4492e;
+    color: #fff;
+    border:1px solid #e4492e;
+}
+.course
+{
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 1rem;
+    border: 1px solid #7c7c7c80;
+}
+.course-photo img
+{
+    width: 10rem;
+    height: 8rem;
+    border-radius: 5px;
+}
+.icon
+{
+    font-size: x-large;
+    color: #fcd709;
+}

@@ -1,0 +1,19 @@
+.restaurant
+{
+    width:100%;
+    height: 40vh;
+    background-image: url("/assets/course.jpg");
+    background-size: cover;
+    border-radius: 15px;
+}
+.top
+{
+    margin: 14rem 0rem 0rem 2rem;
+    color: #fff;
+}
+.butn
+{
+    background-color: #e4492e;
+    color: #fff;
+    border:1px solid #e4492e;
+}
